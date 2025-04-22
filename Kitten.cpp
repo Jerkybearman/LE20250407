@@ -2,6 +2,7 @@
 
 Kitten::Kitten()
 {
+	Name = "Kitten";
 }
 
 Kitten::~Kitten()

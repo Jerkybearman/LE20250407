@@ -8,18 +8,20 @@ using namespace std;
 
 int main() 
 {
-	Animal Animals;
-	vector<Animal*> AnimalBarking;
+	vector<Animal*> everyone;
+
+	everyone.push_back(new Doggo());
+	everyone.push_back(new Kitten());
+	everyone.push_back(new WhiteRabbit());
 
 
-	AnimalBarking.push_back(new Doggo());
-	AnimalBarking.push_back(new Kitten());
-	AnimalBarking.push_back(new White_Rabbit());
-
-	for (auto Animals : AnimalBarking)
+	for (auto LilAnimals : everyone)
 	{
-		Animals->bark();
-
+		LilAnimals->bark();
+		if (LilAnimals->Name == "WhiteRabbit")
+		{
+			LilAnimals->talk();
+		}
 	}
 
 

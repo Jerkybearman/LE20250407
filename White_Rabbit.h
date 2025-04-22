@@ -7,9 +7,11 @@ class Kitten;
 
 using namespace std;
 
-class White_Rabbit : public Animal
+class WhiteRabbit : public Animal
 {
 public : 
-	virtual void bark();
+	WhiteRabbit();
+	virtual ~WhiteRabbit();
+	virtual void talk();
 };
 

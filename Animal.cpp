@@ -14,3 +14,7 @@ Animal::~Animal()
 void Animal::bark()
 {
 }
+
+void Animal::talk()
+{
+}
