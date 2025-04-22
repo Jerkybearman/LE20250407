@@ -7,7 +7,6 @@ public:
 	Animal();
 	virtual ~Animal();
 	virtual void bark();
-protected: 
-	std::vector<Animal*> everyone;
+
 };
 
